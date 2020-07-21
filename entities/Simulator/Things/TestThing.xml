@@ -15,7 +15,7 @@
          enabled="true"
          homeMashup=""
          identifier=""
-         lastModifiedDate="2020-07-15T16:35:39.138Z"
+         lastModifiedDate="2020-07-21T14:18:33.369Z"
          name="TestThing"
          projectName="Simulator"
          published="false"
@@ -66,13 +66,11 @@
                                         <code>
                                         <![CDATA[
                                         var params = {
-                                            infoTableName : "InfoTable",
-                                            dataShapeName : "TestResultData"
+                                        infoTableName : "InfoTable",
+                                        dataShapeName : "TestResultData"
                                         };
-                                        
                                         // CreateInfoTableFromDataShape(infoTableName:STRING("InfoTable"), dataShapeName:STRING):INFOTABLE(TestResultData)
                                         var result = Resources["InfoTableFunctions"].CreateInfoTableFromDataShape(params);
-                                        
                                         // TestResultData entry object
                                         var FirstEntry = new Object();
                                         FirstEntry.comments = "test result that passed the verification"; // STRING
@@ -81,7 +79,6 @@
                                         FirstEntry.passed = true; // BOOLEAN
                                         FirstEntry.testName = "Test for UserName Passed"; // STRING [Primary Key]
                                         FirstEntry.timestamp = new Date(); // DATETIME [Primary Key]
-                                        
                                         var SecondEntry = new Object();
                                         SecondEntry.comments = "test result that failed the verification"; // STRING
                                         SecondEntry.inputParams = {"name": "John"}; // JSON
